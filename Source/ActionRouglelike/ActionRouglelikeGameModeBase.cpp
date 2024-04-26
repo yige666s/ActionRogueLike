@@ -15,5 +15,5 @@ void AActionRouglelikeGameModeBase::BeginPlay()
 void AActionRouglelikeGameModeBase::SelfDestoryActor()
 {
 	//if(MyActor) MyActor->SetLifeSpan(1.5);
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("TEST"));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("TEST"));
 } 
