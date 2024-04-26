@@ -15,5 +15,7 @@ void AActionRouglelikeGameModeBase::BeginPlay()
 void AActionRouglelikeGameModeBase::SelfDestoryActor()
 {
 	//if(MyActor) MyActor->SetLifeSpan(1.5);
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("TEST"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("TEST"),true,FVector2D(5,5));
+	//UE_LOG(LogTemp, Log, TEXT("ok"));
+	UE_LOG(LogTemp, Log, TEXT("i am %d years old, height is %f cm, come from %s"), FMath::RandRange(0, 100), FMath::FRandRange(100, 200), TEXT("±±¾©"));
 } 
