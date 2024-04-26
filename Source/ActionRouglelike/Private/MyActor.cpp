@@ -2,6 +2,7 @@
 
 
 #include "MyActor.h"
+#include "Kismet/KismetSystemLibrary.h"
 
 // Sets default values
 AMyActor::AMyActor()
@@ -16,6 +17,18 @@ void AMyActor::BeginPlay()
 {
 	Super::BeginPlay();
 	
+}
+
+void AMyActor::Destroyed()
+{  
+	Super::Destroyed();
+	//UKismetSystemLibrary::PrintString(this, TEXT("OK"));
+}
+
+void AMyActor::EndPlay(const EEndPlayReason::Type EndPlayReason)
+{
+	Super::EndPlay(EndPlayReason);
+	//UKismetSystemLibrary::PrintString(this, TEXT("Endplay"));
 }
 
 // Called every frame

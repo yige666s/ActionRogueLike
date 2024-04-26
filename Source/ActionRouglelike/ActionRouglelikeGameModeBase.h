@@ -16,4 +16,9 @@ class ACTIONROUGLELIKE_API AActionRouglelikeGameModeBase : public AGameModeBase
 
 protected:
 	virtual void BeginPlay() override;
+
+	UFUNCTION(Exec) //将selfDestoryActor注册为指令函数
+	void SelfDestoryActor();
+
+	AActor* MyActor;
 };
