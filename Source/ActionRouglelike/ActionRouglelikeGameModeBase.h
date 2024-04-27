@@ -7,7 +7,7 @@
 #include "ActionRouglelikeGameModeBase.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class ACTIONROUGLELIKE_API AActionRouglelikeGameModeBase : public AGameModeBase
@@ -18,7 +18,16 @@ protected:
 	virtual void BeginPlay() override;
 
 	UFUNCTION(Exec) //将selfDestoryActor注册为指令函数
-	void SelfDestoryActor();
+		void SelfDestoryActor();
+
+	UFUNCTION(Exec)
+		void FunString();
+
+	UFUNCTION(Exec)
+		void FunName();
+
+	UFUNCTION(Exec)
+		void FunText();
 
 	AActor* MyActor;
 };
